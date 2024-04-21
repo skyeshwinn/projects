@@ -1,0 +1,29 @@
+Project Name: Daily, weekly, quarterly, yearly KPI metrics dashboard generation + top 20 metrics by dept & sub-dept – dashboard generation
+Company: Bass Pro Shops
+Duration: 2 weeks
+Project timeline: May 2022
+
+Situation: Many stakeholders used to come to me and to the team of which I was part of, to ask about the company wide sales or traffic or orders were on the previous 
+day or on that week along with their YoY comparison. The more I thought about this and learnt about this, I more I became curious about this and decide to take full 
+ownership of this by proposing my manager about creating a full dashboard of showcasing all the metrics for our internet sales on a periodic timeline.
+
+Task: 
+• Create an extensive dashboard and automate it by sending to all the stakeholders of the company, of the following metrics – Visits, Revenue (also called demand), 
+Orders, Conversion Rate (defined as orders/visits), Average Order Value (defined as revenue/orders). 
+• The timeline here was – yesterday, week to date, month to date, quarter to date and year to date. This comparison was being done on a YoY basis.
+
+Action: 
+• Used Adobe APIs to create API connections to import the data into DOMO BI tool, which was the tool widely used across the company. 
+• Created every visualization template aka card, to showcase last year and this year’s numbers for a particular metric. The final result i.e. variance % comparison is shown as the actual metric. 
+• Created 25 different combinations of these cards for each of the 3 – BPS, Cabelas and combined metrics of both.
+• In total – 75 cards, along with their respective title of the metric and the name of timeline was showcased.
+• Apart from just this, I wanted to invent and simply by showcasing even more information in another dashboard.
+• I decided to showcase the top 20 best and worst measure of all metrics using a combination chart, across depts and sub-depts. 
+• I displayed two different measure – actual YoY variance as a horizontal bar and the var% as a triangle symbol in the same chart. 
+• I created these for all 5 timelines for 5 different timelines across 3 report suites. Total in 75 charts.
+• I also added slicers for selecting the device type (mobile, desktop, tablet). 
+
+Result:
+I used the DOMO feature of having the ability to automatically send it to relevant stakeholders (more than 300) on a periodic basis, and these people would get both these dashboards every day 
+first thing in the morning. Amazing feedback, even though I couldn’t quantify in terms of financial dollars, I’d saved an estimated 2-3 hours every week on manual work. 
+A lot of them emailed me thanking me for the work that I had done and the metrics that I’ve showcased. 
