@@ -1,0 +1,39 @@
+New customers – products
+
+Situation: 
+I recently observed the increase in sales across some of the products in various categories (both new and old products) and I wanted to perform a deep dive analysis of whether new customers 
+had a major role to play in this. Since advertising (esp. digital) has been crucial in terms of budget allocation of which advertising to go ahead to spend, I took ownership of this project 
+by proposing this idea to the Direct of Digital Marketing and the Director of Marketing about how our best-selling products have been purchased by new customers as opposed to customers that’ve purchased before.
+
+Task:
+To classify these products based on different parameters such as 
+•	% of styles purchased by new customers w.r.t. those purchased by existing customers
+•	% of sales from the styles purchased by new customers w.r.t. those from the sales of existing customers
+•	% of styles which where only purchased for the first time only w.r.t. all the styles purchased by new customers
+•	% of sales from the styles which where only purchased for the first time only w.r.t. all the sales from the styles purchased by new customers
+•	% of sales that were subsequent purchases by new customers w.r.t. all the sales from the styles purchased by new customers
+•	% of styles that were purchased on their own by new customers w.r.t. all the styles purchased by new customers
+•	% of sales from styles that were purchased on their own by new customers w.r.t. all the sales from the styles purchased by new customers
+
+Action:
+• Products -> Styles since they’re better to analyze in terms of data.
+• Type of customer -> New customers (those whose FIRST_PURCHASE_DATE of product purchase is less than 1 year), existing customers (those whose FIRST_PURCHASE_DATE of the product purchase is more than 1 year).
+• Time period analysis -> last 1 year
+• Channels -> Retail and Internet
+• Total styles -> 215k, Styles that were purchased by both new and existing customers -> about 106k
+• Retail + Internet -> 96k styles
+• SQL queries for these logic -> 
+    •	Styles from existing customers
+    •	FIRST_PURCHASED_DATE 
+    •	Styles from new customers
+    •	Styles from new customers whose styles were purchased for the first time only.
+    •	Styles from new customers whose styles were purchased on itself.
+• Based on the above logic, I used sales and count of customers. One of the key parameters of figuring out how much a product is valuable is to find out the Customer Lifetime Value (CLV) -> Customer sales per customer.
+• Created temp tables based of this logic and combined them into a larger final query.
+• Exported the result into a CSV file to figure out the % calculated parameters. Used this large CSV file to perform clustering using the Machine Learning algorithm in Jupyter notebook.
+• Before doing the clustering, I took only the % parameters since they were of the same kind of value. As a result of applying the clustering algorithm, these styles got segregated into different clusters. 
+
+Result:
+Certain high selling products were in different clusters only becoz they varied in some of the % parameters that I mentioned. I then prepared a Powerpoint Presentation highlighting the differences in the clusters 
+of these styles. This recommendation helped them push towards spending more in pushing new customers through appropriate campaigns. Out of top 100 selling styles in last 1 year, sizable number of them for a 
+particular cluster came from more contribution towards new customers. If we keep pushing to sell these top styles, we could bring in as much as 20% more sales YoY.
