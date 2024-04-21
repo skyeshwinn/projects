@@ -10,13 +10,13 @@ by proposing this idea to the Direct of Digital Marketing and the Director of Ma
 
 Task:
 To classify these products based on different parameters such as 
-•	% of styles purchased by new customers w.r.t. those purchased by existing customers
-•	% of sales from the styles purchased by new customers w.r.t. those from the sales of existing customers
-•	% of styles which where only purchased for the first time only w.r.t. all the styles purchased by new customers
-•	% of sales from the styles which where only purchased for the first time only w.r.t. all the sales from the styles purchased by new customers
-•	% of sales that were subsequent purchases by new customers w.r.t. all the sales from the styles purchased by new customers
-•	% of styles that were purchased on their own by new customers w.r.t. all the styles purchased by new customers
-•	% of sales from styles that were purchased on their own by new customers w.r.t. all the sales from the styles purchased by new customers
+• % of styles purchased by new customers w.r.t. those purchased by existing customers
+• % of sales from the styles purchased by new customers w.r.t. those from the sales of existing customers
+• % of styles which where only purchased for the first time only w.r.t. all the styles purchased by new customers
+• % of sales from the styles which where only purchased for the first time only w.r.t. all the sales from the styles purchased by new customers
+• % of sales that were subsequent purchases by new customers w.r.t. all the sales from the styles purchased by new customers
+• % of styles that were purchased on their own by new customers w.r.t. all the styles purchased by new customers
+• % of sales from styles that were purchased on their own by new customers w.r.t. all the sales from the styles purchased by new customers
 
 Action:
 • Products -> Styles since they’re better to analyze in terms of data.
