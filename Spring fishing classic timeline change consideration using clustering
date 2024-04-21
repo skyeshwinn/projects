@@ -1,0 +1,26 @@
+Project name: Spring fishing classic timeline change consideration using clustering
+Company: Bass Pro Shops
+Duration: 1-2 weeks
+Project timeline: August 2023
+
+Situation: Based on this year’s Spring Fishing Classic event, to improve customer experience and to bring in more sales, there was an consideration proposed from the retail 
+managers whether there should be a shift in the timeline for certain stores and if so, which are those to be considered.
+
+Task: 
+To find out 2 things:
+•	Is there a need to consider changing the timeline for the Spring Fishing Classic for certain stores?
+•	If so, which are they? How do we find out 
+
+Action:
+•	There are 172 stores in the US + Canada. I have had to look at all the stores sales to perform the analysis.
+•	Time period -> Jan to Apr (21 weeks)
+•	Visualized 2 parameters in Power BI – WoW sales and WoW revenue diff% for all states & all stores. Key is to study the sales curves and determine what’s the correct parameter.
+•	Zeroed on sales profile -> % of week sale for every week w.r.t. total sales for that store across 21 weeks
+•	Exported the data in the form of CSV file. Imported in python. After excluding other variables and creating index column as store number, created pivot table to performed k-means clustering. 
+•	Found 4 different clusters.
+
+Result:
+•	Stores along S.Florida and few stores in Great Plains in different cluster.
+•	Based on their sales profile and sales, I was able to deliver results in the sense that I recommended that these stores have a week/2 week shift in timeline for next year’s Spring fishing classic event.
+•	Got sign-off from manager and Director. Spoke to distribution team regarding this. They will implement this during start of next year.
+•	Assuming that there’s same sales next year, I estimated that there will be 12-15% more overall revenue in all stores.
